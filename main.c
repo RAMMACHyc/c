@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float A, B;
+    char operateur;
+    printf ("veuillez entrer la valeur de A est : ");
+    scanf("%f",&A);
+    printf("veuillez choisir l'operateur : ");
+    scanf(" %c",&operateur);
+    printf("veuillez entrer la valeur de B est : ");
+    scanf("%f", &B);
+
+
+    switch(operateurg){
+       case '+' :
+            printf("A + B = %.2f",A + B);
+                 break;
+       case '-' :
+            printf("A - B = %.2f", A - B);
+                 break;
+       case '*' :
+            printf("A * B = %.2f" , A * B);
+                 break;
+       default :
+            printf("kolchi khata2\n");
+
+
+    }
+
+    return 0;
+}
