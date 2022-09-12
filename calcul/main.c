@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
@@ -26,8 +27,19 @@ int main()
        case '*' :
             printf("A * B = %.2f" , A * B);
                  break;
-       default :
-            printf("kolchi khata2\n");
+       case'/' :
+        if(B!=0)
+         printf("A / B = %.2f", A / B);
+        else
+            printf("la division par 0 est impossible");
+               break;
+        case'^' :
+            printf("A ^ B = %.2f", pow(A,B));
+                 break;
+
+
+
+
 
 
     }
