@@ -1,34 +1,36 @@
 #include <stdio.h>
 #include <stdlib.h>
-int  nr,a,i,c,k;
-void drawTriangle (int L,int nr)
+int  nr,a,i,c,k,j,L;
+void  Eto(int L,int nr)
 {
+
 
     for(i=1;i<=L;i++){
         for(k=1;k<=L-i;k++){   //les space
             printf(" ");
         }
-        for(c=1;c<=i*2-1;c++){
+        for(c=1;c<=2*i-1;c++){
             printf("*");
         }
         printf("\n");
     }
-}
 
+}
 
 int main()
 {
-    int L,nr,a;
-    int i,c,k;
+
+
     printf("veuillez entrer la valeur L : ");
     scanf("%d",&L);
-    printf("donne moi le neveau :");
+    printf("donne moi le neveau : ");
     scanf("%d",&nr);
 
-    drawTriangle(L++,nr);
-    drawTriangle(L++,nr);
-    drawTriangle(L++,nr);
+    for(i=L-1;i>=0;i--){
+    Eto(L--,nr);
 
+
+    }
     return 0;
 }
 
