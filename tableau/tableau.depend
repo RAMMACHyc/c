@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1663059091 source:c:\users\yc\desktop\tableau\main.c
+	<stdio.h>
+	<stdlib.h>
+
